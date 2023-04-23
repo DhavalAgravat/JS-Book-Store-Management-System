@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register PAge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" class="forml mt-5">
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerFirstName">First Name</label>
+        <input
+          type="text"
+          id="registerFirstName"
+          class="form-control"
+          required
+        />
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show hidden firstnameAlert"
+      >
+        <strong>Error!</strong> Please enter firstname !
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          data-mdb-delay="3000"
+        ></button>
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerLastName">Last Name</label>
+        <input
+          type="text"
+          id="registerLastName"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div
+        class="alert alert-danger alert-dismissible fade show hidden lastNameAlert"
+      >
+        <strong>Error!</strong> Please enter lastname !
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerUserName">Username</label>
+        <input
+          type="text"
+          id="registerUserName"
+          class="form-control"
+          required
+        />
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show hidden userNameAlert"
+      >
+        <strong>Error!</strong> Please enter username!
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show hidden userNameAlert2"
+      >
+        <strong>Error!</strong> Username alredy exist please choose another one!
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerEmail">E-mail</label>
+        <input type="email" id="registerEmail" class="form-control" required />
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show hidden emailAlert"
+      >
+        <strong>Error!</strong> Please enter email!
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerPassword">Password</label>
+        <input type="password" id="registerPassword" class="form-control"
+        /required>
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show hidden passwordAlert"
+      >
+        <strong>Error!</strong> Please enter password!
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerCPassword"
+          >Confirm Password</label
+        >
+        <input
+          type="password"
+          id="registerCPassword"
+          class="form-control"
+          required
+        />
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show hidden passwordAlert"
+      >
+        <strong>Error!</strong> Please enter password!
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show hidden passwordAlert2"
+      >
+        <strong>Error!</strong> Password Does Not Match Check Correctly!
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+
+      <div class="form-group form-outline mb-4">
+        <label for="sel1">Select Your Role:</label>
+        <select class="form-control" id="registerRole">
+          <option>User</option>
+          <option>Admin</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block mb-3 signinbtn">
+        Sign in
+      </button>
+      <button class="btn btn-danger btn-block mb-3">Cancel</button>
+
+      <a href="login.html">Go To Log In</a>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="register.js"></script>
+  </body>
+</html>

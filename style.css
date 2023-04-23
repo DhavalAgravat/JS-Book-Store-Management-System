@@ -1,0 +1,25 @@
+.forml{
+    padding: 50px;
+    background-color: rgb(221, 218, 218);
+    width: 40%;
+    margin-top: 300px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+h1{
+    margin: 20px;
+}
+
+.table{
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+.bookChoiceAlert {
+        margin-top: 70px;
+}
+
+.hidden{
+    display: none;
+}
